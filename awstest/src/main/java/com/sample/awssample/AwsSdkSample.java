@@ -97,7 +97,7 @@ public class AwsSdkSample {
 		 * ://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started
 		 * .html
 		 */
-		File configFile = new File(System.getProperty("user.home.1"),
+		File configFile = new File(System.getProperty("user.home"),
 				".aws/credentials");
 		AWSCredentialsProvider credentialsProvider = new ProfileCredentialsProvider(
 				new ProfilesConfigFile(configFile), "default");
